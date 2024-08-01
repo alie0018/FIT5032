@@ -119,6 +119,12 @@
     <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
       <p>Highlighting Specific Authors:</p>
+      <!-- Activity 14: Highlight the author with the name "George Orwell". -->
+      <div>
+        <p v-for="author in authors" :key="author.id" :class="{ highlight: author.name === 'George Orwell' }">
+          {{ author.name }} ({{ author.birthYear }})
+        </p>
+      </div>
 
     </section>
   </div>
@@ -220,4 +226,5 @@ li {
   margin: 5px 0;
   border-radius: 5px;
 }
+
 </style>
