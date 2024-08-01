@@ -37,7 +37,7 @@
       </ul>
 
       <h3>Finding in Arrays</h3>
-      <p>Finding by property: {{ orwell?.name }}</p>
+      <p>Finding by property: {{ austen.name  }}</p>
 
       <h3>Nested Arrays/Objects</h3>
       <p>{{ austen?.name }}'s works:</p>
@@ -155,7 +155,7 @@ const orwell = computed(() =>
 // Activity 5: Find author by ID
 const austen = computed(() => 
   // TODO: CODE TO FIND AUTHOR BY ID HERE
-  authors.find(author => author.id === 2)
+  authors.find(author => author.id === 1)
 )
 </script>
 
